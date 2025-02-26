@@ -17,5 +17,7 @@ public class helloWorld {
 
 
         System.out.println(t + b);
+
+        System.out.println("Virker det?");
     }
 }
