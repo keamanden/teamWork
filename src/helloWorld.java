@@ -22,6 +22,6 @@ public class helloWorld {
 
         System.out.println(t + b);
 
-        System.out.println("Virker det?");
+        System.out.println("Virker det mikkel 2 ?");
     }
 }
