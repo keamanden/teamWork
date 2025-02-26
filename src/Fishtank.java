@@ -1,7 +1,7 @@
 import java.sql.Time;
 import java.time.LocalDateTime;
 
-public class fishtank {
+public class Fishtank {
     //Attributes
     private String lastWaterChange;
     private String waterQuality;
