@@ -10,6 +10,10 @@ public class helloWorld {
 
 
     }
+
+    public static void Jihad(){
+        System.out.println("Virker det?");
+    }
     public static void raged(){
 
         int t = 10;
