@@ -1,36 +1,26 @@
-import java.time.LocalDate;
+import java.sql.Time;
+import java.time.LocalDateTime;
 
 public class Fishtank {
-private LocalDate lastWaterChange;
-private WaterQuality waterQuality;
-private String waterChangeNote;
+    //Attributes
+    private String lastWaterChange;
+    private String waterQuality;
 
-
-//Definere de mulige status værdier for vandet uden at man kan indtaste en forkert værdi
-public enum WaterQuality{
-    PERFECT, GOOD, OKAY, BAD
-}
-
-public Fishtank(){
-    this.lastWaterChange = LocalDate.now();
-    this.waterQuality = WaterQuality.GOOD;
-    this.waterChangeNote = "Standard note";
-
-}
-
-    public LocalDate getLastWaterChange(){
-    return lastWaterChange;
+    public void Constructor(String lastWaterChange, String waterQuality){
+        //Contructor
+        this.lastWaterChange = lastWaterChange;
+        this.waterQuality = waterQuality;
     }
 
-    public WaterQuality getWaterQuality(){
-        return waterQuality;
-    }
-    public String getWaterChangeNote(){
-    return waterChangeNote;
+    public void changeWater(){
+        System.out.println("Water changed at " + LocalDateTime.now());
+        System.out.println("Note (max 60 characters): ");
     }
 
-    public void changeWater(String note, WaterQuality quality){
-    this.lastWaterChange = quality;
-    this.waterChangeNote = note;
+    public String toString() {
+        Time tid = new Time(0);
+        String s = tid.toString();
+        return s;
     }
+
 }
