@@ -13,7 +13,9 @@ public class Fishtank {
     }
 
     public void changeWater(){
-        System.out.println("Water changed at " + LocalDateTime.now());
+        Time tid = new Time(0);
+        String s = tid.toString();
+        System.out.println("Water changed at " + s + LocalDateTime.now());
         System.out.println("Note (max 60 characters): ");
     }
 
